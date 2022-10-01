@@ -1,3 +1,8 @@
+"""
+    Аттрибуты класса, объекта
+"""
+
+
 class MyObject:
     int_field = 8
     str_field = "string"
@@ -17,7 +22,9 @@ if __name__ == "__main__":
     print()
     object1 = MyObject()
     object2 = MyObject()
-    print("Через объекты класса тоже можем получить доступ к аттрибутам данного класса:", object1.int_field, object2.str_field)
+    print("Через объекты класса тоже можем получить доступ к аттрибутам данного класса:",
+          object1.int_field,
+          object2.str_field)
 
     print()
     MyObject.int_field = 10

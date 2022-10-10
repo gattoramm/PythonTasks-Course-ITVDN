@@ -1,3 +1,8 @@
+"""
+    Методы класса
+"""
+
+
 class Rectangle:
     def __init__(self, side_a, side_b):
         self.side_a = side_a
@@ -5,6 +10,7 @@ class Rectangle:
     
     def __repr__(self):
         return "Rectangle(%.1f, %.1f)" % (self.side_a, self.side_b)
+
 
 class Circle:
     def __init__(self, radius):
@@ -17,6 +23,7 @@ class Circle:
     def from_rectangle(cls, rectangle):
         radius = (rectangle.side_a ** 2 + rectangle.side_b ** 2) ** 0.5 / 2
         return cls(radius)
+
 
 if __name__ == "__main__":
     rectangle = Rectangle(3, 4)

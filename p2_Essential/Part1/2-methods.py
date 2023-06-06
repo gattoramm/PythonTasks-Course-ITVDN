@@ -17,7 +17,7 @@ if __name__ == "__main__":
     john = Person("John", 22)
     lucy = Person("Lucy", 21)
 
-    print("Вызовем метод print_info как функцию внутри класса Person как его аттрибут:")
+    print("Вызовем метод print_info как функцию внутри класса Person как его атрибут:")
     Person.print_info(john)
     Person.print_info(lucy)
 

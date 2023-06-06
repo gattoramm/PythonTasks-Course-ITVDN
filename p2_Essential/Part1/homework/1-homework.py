@@ -19,4 +19,7 @@ class Book:
         return 'Author = %s, Name = %s, Age = %d, Type = %s' % (self.author, self.name, self.age, self.type_book)
     
     def __eq__(self, other):
-        return self.author == other.author and self.name == other.name and self.age == other.age and self.type_book == other.type_book
+        return  self.author == other.author and\
+                self.name == other.name and\
+                self.age == other.age and\
+                self.type_book == other.type_book

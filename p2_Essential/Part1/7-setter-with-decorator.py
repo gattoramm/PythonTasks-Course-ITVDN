@@ -10,7 +10,9 @@ class MyObject:
     def attribute(self, value):
         self.__attribute = value
 
-obj = MyObject()
-print(obj.attribute)
-obj.attribute = 20
-print(obj.attribute)
+
+if __name__ == "__main__":
+    obj = MyObject()
+    print(obj.attribute)
+    obj.attribute = 20
+    print(obj.attribute)

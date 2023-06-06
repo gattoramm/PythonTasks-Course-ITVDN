@@ -17,7 +17,7 @@ class Circle:
         self.radius = radius
     
     def __repr__(self):
-        return "Circle(%.1f)" % (self.radius)
+        return "Circle(%.1f)" % self.radius
     
     @classmethod
     def from_rectangle(cls, rectangle):

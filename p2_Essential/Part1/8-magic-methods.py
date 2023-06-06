@@ -18,14 +18,16 @@ class Complex:
     def __sub__(self, other):
         return self + (-other)
 
-c = Complex(2, 5)
-print(c)
 
-b = Complex(1, 3)
-print(c+b)
+if __name__ == "__main__":
+    c = Complex(2, 5)
+    print(c)
 
-bb = -b
-print(bb)
+    b = Complex(1, 3)
+    print(c+b)
 
-d = c - b
-print(d)
+    bb = -b
+    print(bb)
+
+    d = c - b
+    print(d)

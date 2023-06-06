@@ -8,7 +8,9 @@ class MyObject:
     def set_attribute(self, value):
         self.__private_attribute = value
 
-obj = MyObject()
-print(obj.get_private())
-obj.set_attribute(100)
-print(obj.get_private())
+
+if __name__ == "__main__":
+    obj = MyObject()
+    print(obj.get_private())
+    obj.set_attribute(100)
+    print(obj.get_private())

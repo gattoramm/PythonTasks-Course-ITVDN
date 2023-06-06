@@ -12,12 +12,12 @@ class Automobile:
         return "Automobile %s" % self.auto
 
 
-class Autosalone:
-    def __init__(self, autosalone):
-        self.autosalone = autosalone
+class Automarket:
+    def __init__(self, automarket):
+        self.automarket = automarket
     
     def __repr__(self):
-        return "Autosalone %s" % self.autosalone
+        return "Automarket %s" % self.automarket
     
     @classmethod
     def auto_in_salone(cls, auto):
@@ -31,7 +31,7 @@ if __name__ == "__main__":
     auto4 = Automobile("Ferrari")
     print(auto1)
 
-    autosalone1 = Autosalone.auto_in_salone(auto1)
-    autosalone2 = Autosalone.auto_in_salone(auto2)
-    print(autosalone1)
-    print(autosalone2)
+    automarket1 = Automarket.auto_in_salone(auto1)
+    automarket2 = Automarket.auto_in_salone(auto2)
+    print(automarket1)
+    print(automarket2)

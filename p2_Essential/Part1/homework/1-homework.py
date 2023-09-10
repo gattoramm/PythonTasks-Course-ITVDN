@@ -1,25 +1,37 @@
 """
-    Создайте класс, описывающий книгу. Он должен содержать информацию об авторе, названии, годе
-    издания и жанре. Создайте несколько разных книг. Определите для него операции проверки на
-    равенство и неравенство, методы __repr__ и __str__.
+    Создайте класс, описывающий автомобиль. Создайте класс автосалона, содержащий в себе список
+    автомобилей, доступных для продажи, и функцию продажи заданного автомобиля.
 """
 
 
-class Book:
-    def __init__(self, author, name, age, type_book):
-        self.author = author
-        self.name = name
-        self.age = age
-        self.type_book = type_book
+class Automobile:
+    def __init__(self, auto):
+        self.auto = auto
     
     def __repr__(self):
-        return "Book(%s, %s, %s, %s)" % (self.author, self.name, self.age, self.type_book)
+        return "Automobile %s" % self.auto
+
+
+class Shop:
+    def __init__(self, shop):
+        self.shop = shop
     
-    def __str__(self):
-        return 'Author = %s, Name = %s, Age = %d, Type = %s' % (self.author, self.name, self.age, self.type_book)
+    def __repr__(self):
+        return "Shop %s" % self.shop
     
-    def __eq__(self, other):
-        return  self.author == other.author and\
-                self.name == other.name and\
-                self.age == other.age and\
-                self.type_book == other.type_book
+    @classmethod
+    def auto_in_shop(cls, auto):
+        return cls(auto)
+
+
+if __name__ == "__main__":
+    auto1 = Automobile("BMW")
+    auto2 = Automobile("Audi")
+    auto3 = Automobile("Skoda")
+    auto4 = Automobile("Ferrari")
+    print(auto1)
+
+    shop1 = Shop.auto_in_shop(auto1)
+    shop2 = Shop.auto_in_shop(auto2)
+    print(shop1)
+    print(shop2)

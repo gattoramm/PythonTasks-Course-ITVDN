@@ -11,6 +11,7 @@ class Child(Base):
         print('Child(Base)')
 
 
-obj = Child()
-obj.method()
-obj.child_method()
+if __name__ == "__main__":
+    obj = Child()
+    obj.method()
+    obj.child_method()

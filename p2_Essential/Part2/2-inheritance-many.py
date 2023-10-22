@@ -1,5 +1,5 @@
 class Figure:
-    def __init__(self, side=0.0):
+    def __init__(self, side=0):
         self.side = side
 
 
@@ -19,6 +19,7 @@ def main():
     square = Square(6)
     triangle = Triangle(8)
     square.draw()
+    print()
     triangle.draw()
 
 

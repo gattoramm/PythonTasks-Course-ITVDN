@@ -70,4 +70,8 @@ if __name__ == "__main__":
     print("values = ", values)
     values.remove(999)
     print("values = ", values)
+    print('\t\tclear')
+    print("values = ", values)
+    values.clear()
+    print("values = ", values)
 

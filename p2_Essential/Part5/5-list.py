@@ -1,0 +1,28 @@
+if __name__ == "__main__":
+    a = list()
+    print(a)
+    print(list[range(10)])
+    print([])
+    print(['hello', 'world'])
+    print([5, 2, 8])
+    print([x * 2 for x in range(10)])
+    values = [5, 2, -1, 8]
+    print(values)
+    values.sort()
+    print(values)
+    values.reverse()
+    print(values)
+    values.extend([7, -10, 17])
+    print(values)
+    values.sort(reverse=True)
+    print(values)
+    values2 = ['hello', 'world', ',', 'my']
+    print(values2)
+    values2.sort()
+    print(values2)
+    values3 = [-10, 7, 17, 17]
+    print(values3)
+    values3.sort(key=abs)
+    print(values3)
+    print('AdfdAF'.lower())
+    print('AdfdAF'.casefold())

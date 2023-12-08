@@ -37,3 +37,5 @@ if __name__ == "__main__":
     y = 5
     x, y = y, x
     print(x, y)
+    values = [5, 6, 8, 1, 5]
+    print(*values, sep=', ')

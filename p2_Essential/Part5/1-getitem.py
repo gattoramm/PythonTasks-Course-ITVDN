@@ -6,6 +6,7 @@ def sequence(values):
 def print_slice():
     print(slice)
     print(slice(2, 5))
+    print(slice(3, 6, None))
 
 
 def slice_sequence(values):

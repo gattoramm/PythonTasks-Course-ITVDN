@@ -44,7 +44,35 @@ class RangeIterator:
         if self.next_value >= self.range.end and self.range.step > 0 or \
            self.next_value <= self.range.end and self.range.step < 0:
             raise StopIteration
+
         result = self.next_value
         self.next_value += self.range.step
 
         return result
+
+
+if __name__ == '__main__':
+    r = MyRange(10)
+    it = iter(r)
+    print('it = iter(r) :', it)
+    print('next(it) :', next(it))
+    print('next(it) :', next(it))
+
+    for i in MyRange(3, 8):
+        print(i)
+
+    print()
+
+    for i in MyRange(3, 8, 2):
+        print(i)
+
+    print()
+
+    for i in MyRange(10, 0, -2):
+        print(i)
+
+    print()
+    print('len r:', len(r))
+    print('r =', r)
+
+
